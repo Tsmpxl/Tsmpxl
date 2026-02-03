@@ -18,6 +18,11 @@
   -webkit-overflow-scrolling: touch;
 }
 
+.quotes-content {
+  flex-direction: row;
+  padding-bottom: 0px;
+}
+
 .footer {
   display: none;
 }
@@ -138,9 +143,6 @@
   --padding-header: 0 60px;
 }
 
-.links-for-hover:hover {
-  background-color: rgb(0, 132, 255);
-}
 
 .nav-links {
   padding: 20px 15px;
