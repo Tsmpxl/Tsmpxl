@@ -1,0 +1,60 @@
+.quotes-page {
+  padding: 8rem 1.5rem;
+  padding-top: var(--nav-body--pad-top);
+   z-index: 0;
+   background: linear-gradient( rgb(18, 18, 18), rgb(14, 14, 14) , black);
+}
+
+.inline-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.quotes-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(2, 25, 63);
+  padding-bottom: 50px;
+}
+
+.philosophers-pfp {
+  width: var(--philosopher-icon-width);
+  height: var(--philosopher-icon-height);
+  object-fit: cover;
+  object-position: top;
+  display: flex;
+}
+
+
+
+.phil-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: var(--pad-top-phil-info);
+
+}
+
+.name-phil {
+  font-weight: bold;
+  font-size: var(--mid-font-size);
+}
+
+.bio-phil {
+  font-weight: var(--font-bold);
+  font-size: var(--mid-font-size);
+  padding-top: var(--pad-top-bottom-phil);
+  padding-bottom: var(--pad-top-bottom-phil);
+}
+
+.quotes {
+  font-size: var(--quote-size);
+  width: var(--quote-char);
+  line-height: var(--quote-line-height);
+  text-align: center;
+}

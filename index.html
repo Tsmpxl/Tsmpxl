@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css-main-page/styles.css">
+  <link rel="stylesheet" href="css-main-page/animations.css">
+  <link rel="stylesheet" href="css-main-page/quotes.css">
+  <link rel="stylesheet" href="css-main-page/media-queries.css">
+  <link rel="icon" href="icons/icon.png">
+  <title>Tsmpxl</title>
+</head>
+
+<body>
+
+  <header class="header">
+   <div class="logo-class">
+     <a href="#main-top"><img class="icon-logo" src="icons/icon.png" alt="icon logo"></a>
+     <a class="nav-links logo-name-an" href="#main-top">Tsmpxl</a>
+   </div>
+
+  <button class="nav-toggle" aria-label="Toggle navigation">
+    ☰
+  </button>
+
+  <nav class="nav-menu">
+      <a class="nav-links links-for-hover visible-pc js-on-off-toggle0" onclick="activeButtonEl('.js-on-off-toggle0')" href="#main-top">Home</a>
+      <a class="nav-links links-for-hover js-on-off-toggle1" onclick="activeButtonEl('.js-on-off-toggle1')" href="#quotes">Quotes</a>
+      <a class="nav-links links-for-hover" href="portfolio.html#portfolio">Portfolio</a>
+      <a class="nav-links links-for-hover" href="portfolio.html#about">About</a>
+      <a class="nav-links links-for-hover" href="portfolio.html#projects">Projects</a>
+      <a class="nav-links links-for-hover" href="portfolio.html#contact">Contact</a>
+  </nav>
+</header>
+
+
+  <main>
+
+    <div class="video-bg">
+      <video autoplay muted loop playsinline>
+        <source src="backgrounds/animated-back.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="main-page" id="main-top">
+      <div class="main-welcome">
+        <div class="main-welcome-fonts">Hello</div>
+        <div class="main-welcome-fonts">I am Tsmpxl</div>
+        <div class="main-welcome-fonts">This is my Website</div>
+      </div>
+      <div class="main-my-info">
+        <div class="main-paragraph">Lorem ipsum dolor en sit, amet consectetur mi adipisicing elit. Error, nesciunt vel atque cumque provident temporibus? Qui perspiciatis minima blanditiis non! </div>
+      </div>
+      <div class="my-social-main">
+          <div class="promote-social">Check My Social:</div>
+          <div class="social-icons">
+            <div><a href="https://github.com/Tsmpxl" target="_blank"><img class="main-logos invert" src="icons/github.jpg" alt="git"></a></div>
+            <div><a href="https://www.instagram.com/tsmpxpill" target="_blank"><img class="main-logos invert" src="icons/insta.png" alt="Insta"></a></div>
+            <div><a href="https://www.tiktok.com/@tmpxpill" target="_blank"><img class="main-logos invert" src="icons/tiktok.avif" alt="tiktok"></a></div>
+            <div><a href="https://www.youtube.com/@LastRecs" target="_blank"><img class="main-logos invert" src="icons/youtube.jpg" alt="youtube"></a></div>
+          </div>
+      </div>
+    </div>
+
+    <div class="quotes-page" id="quotes">
+
+      <div class="inline-quote">
+      <a href="https://www.goodreads.com/author/quotes/2192.Aristotle" class="quote-link">
+        <div class="quotes-content">
+          <div><img class="philosophers-pfp" src="pfps/aristotle.png" alt="aristotle"></div>
+          <div class="phil-info">
+            <div class="name-phil">Aristotle</div>
+            <div class="bio-phil">Greek philosopher</div>
+            <div class="quotes">Knowing yourself is the beginning of all wisdom.</div>
+          </div>
+        </div>
+        </a>
+      </div>
+
+      <div class="inline-quote">
+        <a href="https://www.goodreads.com/author/quotes/879.Plato" class="quote-link">
+        <div class="quotes-content">
+          <div><img class="philosophers-pfp" src="pfps/plato.webp" alt="Platos"></div>
+          <div class="phil-info">
+            <div class="name-phil">Plato</div>
+            <div class="bio-phil">Greek philosopher </div>
+            <div class="quotes">Be kind, for everyone you meet is fighting a harder battle.</div>
+          </div>
+        </div>
+        </a>
+      </div>
+      
+      <div class="inline-quote">
+        <a href="https://www.goodreads.com/author/quotes/17212.Marcus_Aurelius" class="quote-link">
+        <div class="quotes-content">
+          <div><img class="philosophers-pfp" src="pfps/marcus.jpg" alt="aristotle"></div>
+          <div class="phil-info">
+            <div class="name-phil">Marcus Aurelius</div>
+            <div class="bio-phil">Former Roman emperor</div>
+            <div class="quotes">You have power over your mind - not outside events. Realize this, and you will find strength.</div>
+          </div>
+        </div>
+        </a>
+      </div>
+
+      <div class="inline-quote">
+        <a href="https://www.goodreads.com/author/quotes/15321.Confucius" class="quote-link">
+        <div class="quotes-content">
+          <div><img class="philosophers-pfp" src="pfps/confucius.webp" alt="confucius"></div>
+          <div class="phil-info">
+            <div class="name-phil">Confucius</div>
+            <div class="bio-phil">Chinese philosopher</div>
+            <div class="quotes">When it is obvious that the goals cannot be reached, don't adjust the goals, adjust the action steps.</div>
+          </div>
+        </div>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="copyright-footer">&copy;Tsmpxl <time id="year"></time></div>
+  </footer>
+  
+
+  <script src="js/copyright.js" defer></script>
+  <script src="js/button-nav.js" defer></script>
+
+  <script src="js/active-buttons-pc.js"></script>
+</body>
+</html>
+
+

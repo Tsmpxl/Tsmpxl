@@ -1,0 +1,263 @@
+/* ================||ROTATE PHONE||================ */
+ 
+@media screen and (orientation: landscape) and (max-width: 960px) {
+
+.main-page {
+  padding: 7rem 1.5rem;
+
+}
+
+.main-my-info {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.nav-menu {
+  max-height: calc(100vh - var(--nav-height));
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.footer {
+  display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/* ================||TABLETS||================ */
+
+@media screen and (min-width: 768px) {
+
+:root {
+
+  /* ================||SIZES||================ */
+
+  --nav-height: 65px;
+  --icon-logo-height: 40px;
+  --icon-logo-width: 40px;
+  --small-font-size: 18px;
+  --mid-font-size: 22px;
+  --big-font-size: 50px;
+  --nav-font-size: 20px;
+  --nav-body--pad-top: 150px;
+  --main-logo-height: 60px;
+  --main-logo-width: 60px;
+  --border-radius-main-logo: 30px;
+  --padding-left-main:60px;
+  --padding-bottom-main: 60px; 
+  --font-width: 50ch;
+  
+  --padding-header: 0 40px;
+  --pad-top-phil-info:20px;
+  --pad-top-bottom-phil:20px;
+  --quote-size:17px;
+  --quote-char:28ch;
+  --quote-line-height:25px;
+  --philosopher-icon-width:350px;
+  --philosopher-icon-height:350px;
+}
+
+
+
+  .nav-menu {
+    gap: 25px;
+    padding: 0;
+    min-height: 28vh;
+    padding: 25px 0;
+  }
+
+
+.header-name {
+  width: var(--font-bold);
+  padding-left: 10px;
+}
+
+.main-welcome-fonts {
+  line-height: 65px;
+}
+
+.main-paragraph {
+  padding-bottom: 80px;
+}
+
+.promote-social  {
+  padding-bottom: 15px;
+}
+
+.social-icons {
+  gap: 20px ;
+}
+
+
+
+.quotes-content {
+  flex-direction: row;
+  padding-bottom: 0px;
+}
+
+.phil-info {
+  padding-left: var(--pad-top-bottom-phil);
+  padding-right: var(--pad-top-bottom-phil);
+
+}
+
+
+
+}
+
+  /* ================||LAPTOPS||================ */
+
+@media screen and (min-width: 1024px) {
+
+:root {
+
+  /* ================||SIZES||================ */
+
+  --nav-height: 70px;
+  --icon-logo-height: 35px;
+  --icon-logo-width: 35px;
+  --small-font-size: 20px;
+  --mid-font-size: 25px;
+  --big-font-size: 60px;
+  --nav-font-size: 22px;
+  --nav-body--pad-top: 160px;
+  --main-logo-height: 65px;
+  --main-logo-width: 65px;
+  --border-radius-main-logo: 32.5px;
+  --padding-left-main:80px;
+  --padding-bottom-main: 62px; 
+  --font-width: 55ch;
+  --padding-header: 0 60px;
+}
+
+.links-for-hover:hover {
+  background-color: rgb(0, 132, 255);
+}
+
+.nav-links {
+  padding: 20px 15px;
+}
+
+.header-name {
+  width: var(--font-bold);
+  padding-left: 12px;
+}
+
+.main-welcome-fonts {
+  line-height: 70px;
+}
+
+.main-paragraph {
+  padding-bottom: 60px;
+}
+
+.promote-social  {
+  padding-bottom: 20px;
+}
+
+.social-icons {
+  gap: 25px ;
+}
+
+.visible-pc {
+  display: block;
+}
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-menu {
+    position: static;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+    flex-direction: row;
+    gap: 25px;
+    background: none;
+    padding: 0;
+  }
+
+  .quotes-page {
+    padding-bottom: 30px;
+  }
+
+.links-for-hover:hover , .is-toggled{
+  background-color: rgb(0, 132, 255);
+}
+}
+
+  /* ================||DEKSTOPS , PC||================ */
+
+@media screen and (min-width: 1200px) {
+
+:root {
+
+  /* ================||SIZES||================ */
+
+  --nav-height: 70px;
+  --icon-logo-height: 45px;
+  --icon-logo-width: 45px;
+  --small-font-size: 25px;
+  --mid-font-size: 28px;
+  --big-font-size: 80px;
+  --nav-font-size: 25px;
+  --nav-body--pad-top: 220px;
+  --main-logo-height: 80px;
+  --main-logo-width: 80px;
+  --border-radius-main-logo: 40px;
+  --padding-left-main:150px;
+  --padding-bottom-main: 80px; 
+  --font-width: 75ch;
+  --padding-header: 0 80px;
+
+  --pad-top-phil-info:20px;
+  --pad-top-bottom-phil:20px;
+  --quote-size:20px;
+  --quote-char:45ch;
+  --quote-line-height:30px;
+  --philosopher-icon-width:400px;
+  --philosopher-icon-height:400px;
+}
+
+.header-name {
+  width: var(--font-bold);
+  padding-left: 15px;
+}
+
+.main-welcome-fonts {
+  line-height: 95px;
+}
+
+.main-paragraph {
+  padding-bottom: 50px;
+}
+
+.promote-social  {
+  padding-bottom: 25px;
+}
+
+.social-icons {
+  gap: 25px ;
+}
+
+.quotes-page {
+  background-image: url(../backgrounds/philosophy.webp);
+  background-size: cover;
+  background-position: right;
+}
+
+.links-for-hover:hover , .is-toggled{
+  background-color: rgb(0, 132, 255);
+}
+
+}
+

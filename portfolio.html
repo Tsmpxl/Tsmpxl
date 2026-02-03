@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="portfolio-css/portfolio-styles.css">
+  <link rel="stylesheet" href="portfolio-css/media-portfolio.css">
+
+  <link rel="icon" href="icons/icon.png">
+  <title>Tsmpxl Portfolio</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-class">
+      <a href="index.html"><img class="icon-logo" src="icons/icon.png" alt="icon logo"></a>
+      <a class="nav-links logo-name-an" href="index.html">Tsmpxl</a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+
+    <nav class="nav-menu">
+      <a class="nav-links links-for-hover " href="index.html">Home</a>
+      <a class="nav-links links-for-hover js-on-off-toggle1" onclick="activeButtonEl('.js-on-off-toggle2')" href="#portfolio">Portfolio</a>
+      <a class="nav-links links-for-hover js-on-off-toggle2" onclick="activeButtonEl('.js-on-off-toggle3')" href="#about">About</a>
+      <a class="nav-links links-for-hover js-on-off-toggle3" onclick="activeButtonEl('.js-on-off-toggle4')" href="#projects">Projects</a>
+      <a class="nav-links links-for-hover js-on-off-toggle4" onclick="activeButtonEl('.js-on-off-toggle5')" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="main-portfolio" id="portfolio">
+      <div class="title">Hey , I am Tsmpxl</div>
+      <div class="goal">I am a front-end developer in training, currently learning JavaScript</div>
+    </section>
+
+    <section class="about-page" id="about">
+      <div class="title-about">About</div>
+      <div class="about-me-p">I am Tsmxpl, an aspiring front-end developer currently learning  JavaScript. I focus on building clean, responsive, and user-friendly websites. My goal is to become a full-stack developer and create complete web applications that are both functional and visually appealing. I enjoy learning through hands-on projects and continuously improving my skills in modern web development.</div>
+    </section>
+
+    <section class="projects-page" id="projects">
+      <div class="title">My Projects</div>
+
+      <div class="projects-grid">
+        <div class="container-projects" onclick="alert('The Projects does not work at this moment');">
+          <img class="project-show" src="backgrounds/example1.png" alt="coffe shop">
+          <div class="project-name">Coffee Shop</div>
+          <div class="project-info">A Simple Coffee Shop</div>
+      </div>
+
+      <img class="icon-not-working invert" src="icons/doesnt-work.png" alt="not-working">
+
+      <div class="container-projects show-in-tablet"  onclick="alert('The Projects does not work at this moment');">
+        <img class="project-show" src="backgrounds/copy-toutube.png" alt="youtube copy">
+        <div class="project-name">Youtube Copy</div>
+        <div class="project-info">A copy of youtube </div>
+      </div> 
+        
+    </div>
+
+      <div class="more-projects" onclick="alert('The Projects does not work at this moment');">See More &gt; </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-title">Contact Us</div>
+
+      <div class="contact-container">
+
+        <div class="content-contact">
+
+          <div class="contact-card-title">Get in touch</div>
+          <form  id="contactForm" class="form-contact" action="https://formspree.io/f/xwvvlwgl" method="POST">
+              <div><img class="spark invert" src="icons/sparkles.png" alt="sparkles"></div>
+              <div><img class="send invert" src="icons/send.png" alt="send"></div>
+              <div class="buttons-form"><input class="contact-buttons" type="text" id="fname" name="firstName" placeholder="First Name" required> <img class="icon-name" src="icons/profile.png" alt="name"></div>
+              <div class="buttons-form"><input class="contact-buttons" type="text" id="lname" name="lastName" placeholder="Last Name" required><img class="icon-last" src="icons/surname.jpg" alt="last name"></div>
+              <div class="buttons-form"><input class="contact-buttons" type="email" id="email" name="email" placeholder="Email" required> <img class="icon-email" src="icons/email.png" alt="email"></div>
+              <div class="buttons-form"><input class="contact-buttons" type="tel" id="phone" name="phone" placeholder="Phone"> <img class="icon-phone" src="icons/phone.png" alt="phone"></div>
+              
+              <div class="buttons-form message-box">
+                  <textarea class="contact-buttons contact-message" name="message" placeholder="Your message..." rows="4" required></textarea>
+            </div>
+            <div class="send-wrapper"><button class="send-button" type="submit">Send</button></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="promote">
+        <div><a href="https://github.com/Tsmpxl" target="_blank"><img class="promote-icons" src="icons/github.jpg" alt="github"></a></div>
+        <div><a href="https://www.instagram.com/tsmpxpill" target="_blank"><img class="promote-icons" src="icons/insta.png" alt="Insta"></a></div>
+        <div><a href="https://www.tiktok.com/@tmpxpill" target="_blank"><img class="promote-icons" src="icons/tiktok.avif" alt="tiktok"></a></div>
+        <div><a href="https://www.youtube.com/@LastRecs" target="_blank"><img class="promote-icons" src="icons/youtube.jpg" alt="Youtube"></a></div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="copyright-footer">&copy;Tsmpxl <time id="year"></time></div>
+  </footer>
+
+
+  <script src="js/button-nav.js" defer></script>
+  <script src="js/copyright.js" defer></script>
+  <script src="js/contact.js" defer></script>
+
+  <script src="js/active-buttons-pc.js"></script>
+</body>
+</html>
